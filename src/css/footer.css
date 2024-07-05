@@ -1,0 +1,73 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color:var(--third-color)
+}
+#voltar-topo{
+    font-size: 40px;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 0.4em;
+    right: 1em;
+    transition: 1s;
+}
+#voltar-topo:hover{
+    font-size: 50px;
+    transition: 1s;
+}
+.containerImagensFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imagemFooter{
+    width: 20vw;    
+    margin-right: 5%; 
+    justify-content: space-around;
+    margin-top: 0.8em;    
+}
+.copyright{
+    width: 100%;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-left: 3%;
+    margin-top: 0.8em;
+}
+.divRedesSociais{
+    display: flex;
+}
+.fa-whatsapp{
+    font-size: 3vw;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    color: white;
+}
+.fa-instagram{
+    font-size: 3vw;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    color: white;
+}
+/*TAMANHO MAX 600PX*/
+@media (max-width: 600px) {
+    .copyright {
+        font-size: 9px;
+    }
+    #voltar-topo {
+        font-size: 20px;
+    }
+}
+/*TAMANHO MAX 320PX*/
+@media (max-width:320px) {
+    .copyright {
+        font-size: 6px;
+    }
+
+    #voltar-topo {
+        font-size: 10px;
+    }
+}

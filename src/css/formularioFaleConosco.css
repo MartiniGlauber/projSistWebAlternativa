@@ -1,0 +1,45 @@
+.formularioFaleConosco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    width: 70vw;
+    height: 20em;
+    margin: auto;
+    margin-bottom: 2em;
+    gap: 10px;
+    border-radius: 7px;
+}
+.formularioFaleConosco input{
+    width: 90%;   
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.formularioFaleConosco textarea{
+    width: 90%;   
+    border-radius: 5px;
+    
+}
+::placeholder{
+    font-family: var(--fonte-padrao);
+}
+button{
+    font-family: var(--fonte-padrao);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+button:hover{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    transition: 1s;
+    font-size: 16px;
+}

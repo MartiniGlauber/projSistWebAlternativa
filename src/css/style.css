@@ -1,0 +1,87 @@
+@import url(header.css);
+@import url(paraEmpresas.css);
+@import url(banner.css);
+@import url(reserva.css);
+@import url(requisitosLocacao.css);
+@import url(footer.css);
+@import url(promocoes.css);
+@import url(localizacao.css);
+@import url(formularioFaleConosco.css);
+
+:root{
+    --primary-color: #846130;
+    --second-color: #D98107;
+    --third-color: #0788D9;
+    --fonte-padrao: "Roboto Serif", serif;
+}
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../imagens/fundo4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--fonte-padrao);
+}
+h1,h2,h3,p{
+    color: var(--primary-color);   
+}
+h1{
+    font-size: 2.3vw;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    text-align: center;
+    transition: 1s;
+}
+h1:hover{
+    font-size: 2.5vw;
+    transition: 1s;
+}
+h2{
+    font-size: 1.7vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+h3{
+    font-size: 1.5vw;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: center;  
+}
+
+ul{
+    margin-left:-40px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+/*TAMANHO MAX 755PX*/
+@media (max-width:755px) {
+    h1{
+        font-size: 2.2rem;
+    } 
+    h1:hover{
+        font-size: 2.4rem;
+    } 
+    h2{
+        font-size: 0.9rem;
+    }    
+}
+/*TAMANHO MAXIMO 320PX*/
+@media (max-width:320px) {
+    h1{
+        font-size: 7vw;
+    }    
+    h1:hover{
+        font-size: 9vw;
+    }    
+}

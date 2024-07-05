@@ -1,0 +1,127 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--fonte-padrao);
+}
+.logo {
+  width: 10vw;
+  border-radius: 0.2rem;
+}
+.login{
+  display: flex;
+  gap: 3px;  
+ }
+#usuario, #senha{
+  width: 10vw;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-left: 20px;
+}
+a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+a:hover {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+.menuLinks {
+  display: flex;
+  list-style: none;
+}
+#botaoHamburguer {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin: auto;
+  cursor: pointer;
+}
+/*TAMANHO MAX 1245PX*/
+@media (max-width:1245px) {
+  .login{
+    display: none;
+  }
+}
+/*TAMANHO MAX 967PX*/
+@media (max-width:967px) {
+  a{
+    font-size: 0.5rem;
+  }  
+  a:hover{
+    font-size: 0.7rem;
+  }  
+}
+
+/*TAMANHO MINIMO 776PX */
+@media (min-width: 776px) {
+  #botaoHamburguer {
+    display: none;
+  }
+}
+/* TAMANHO MAXIMO 775 PX*/
+@media (max-width: 775px) {
+  .menuLinks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  ul li a {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  ul li a:hover {
+    font-size: 2.2rem;
+  }
+  .containerLogo {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*TAMANHO MAXIMO 600PX*/
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    width: 13vw;
+    margin-top: 4px;
+    margin-bottom: 7px;
+  }
+  ul li a {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  ul li a:hover {
+    font-size: 1.5rem;
+  }
+}
+/*TAMANHO MAXIMO 320PX*/
+@media (max-width:320px) {
+    .logo {
+        width: 22vw;
+        height: 30px;
+    }
+
+    .menuLinks {
+        display: none;
+    }    
+}

@@ -1,0 +1,78 @@
+.containerCardRequisitos{
+    width: 95%;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--primary-color);
+}
+.cardRequisitos{
+    width:98%;
+    height: 98%;
+    margin: 0.1em;
+    border-radius: 0.3em;
+    color: var(--primary-color);
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding: 10px;
+}
+.cardRequisitos h3{
+    width:200px;
+    margin-left: 10px;
+
+}
+.organizacaoCardRequisitos{
+    display: flex;
+    align-items: center;
+    width:250px ;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.fa-user-check{
+    font-size: 2em;
+}
+.fa-id-card{
+    font-size: 2em;
+}
+.fa-credit-card{
+    font-size: 2em;
+}
+.fa-circle-check{
+    font-size: 2em;
+}
+.fa-plane-arrival{
+    font-size: 2em;
+}
+/*TAMANHO MAX 600PX*/
+@media (max-width:600px) {
+    .texto-escondido{
+        display: none;
+    }
+    .containerCardRequisitos {
+        display: grid;
+        align-content: center;
+    }
+    .cardRequisitos{
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cardRequisitos p {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+/*TAMANHO MAX 320PX*/
+@media (max-width:320px) {
+    .containerCardRequisitos {
+        display: grid;
+        align-content: center;
+    }
+}

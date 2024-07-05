@@ -1,0 +1,14 @@
+.containerLocalizacao{
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+}

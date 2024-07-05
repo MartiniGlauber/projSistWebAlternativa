@@ -1,0 +1,68 @@
+.containerCardVantagens{
+    margin: auto;
+    padding: 1em;
+    display: flex; 
+    flex-direction: row;   
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--primary-color);
+}
+.divOrganizacaoCards{
+    display: flex;
+}
+.cardVantagens{
+    width: 14%;
+    font-size: 0.8em;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1em;    
+}
+.fa-car-burst{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+.fa-money-bills{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+.fa-dollar-sign{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+.fa-calendar-days{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+.fa-car-on{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+.fa-user{
+    font-size: 3.5em;
+    margin-top: 0.5em;
+}
+/*TAMANHO MAXIMO 1090PX */
+@media (max-width:1090px) {
+    .cardVantagens{
+        width: 30%;
+    }    
+}
+/* TAMANHO MAXIMO 755PX*/
+@media (max-width:755px) {
+    .cardVantagens {
+        width: 22%;
+    }    
+}
+/*TAMANHO MAXIMO 600PX*/
+@media (max-width:600px) {
+    .cardVantagens{
+        width: 40%;
+    }    
+}
+/*TAMANHO MAXIMO 320PX*/
+@media (max-width:320px) {
+    .cardVantagens{
+        width: 100%;
+    }    
+}

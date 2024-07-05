@@ -1,0 +1,53 @@
+.banner{
+    width: 100%;
+    border-radius: 1em;
+    
+}
+.controles{
+    height: 10vh;
+    color: var(--primary-color);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;    
+    display: flex;
+    justify-content:center;    
+}
+#prev{
+    font-size: 2.8rem;
+    transition: 0.8s;
+    cursor: pointer;
+}
+#next{
+    font-size: 2.8rem;
+    transition: 0.8s;
+    cursor: pointer;
+}
+#prev:hover{
+    font-size: 3rem;
+    transition: 0.8s;
+}
+#next:hover{
+    font-size: 3rem;
+    transition: 0.8s;
+}
+.controles :first-child{
+    margin-right: 0.5em;
+}
+/*TAMANHO MAX 1090PX*/
+@media (max-width:1090px) {
+    nav{
+        font-size: 0.7em;
+    }    
+}
+/*TAMANHO MAX 951PX*/
+@media (max-width:951px) {
+    nav{
+        font-size: 0.5em;
+    }
+}
+/*TAMANHO MAXIMO 763PX*/
+@media (max-width:763px) {
+    nav{
+        font-size: 0.4em;
+    }
+}
+
