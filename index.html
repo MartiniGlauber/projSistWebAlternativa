@@ -27,14 +27,14 @@
     
     <header>
         <!--LOGO-->
-        <div class="containerLogo">
+        <div class="container-logo">
             <img src="src/imagens/logo.png" alt="Logo Alternativa Autolocadora" class="logo">
         </div>
         <!--MENU DE NAVEGAÇÃO (LINKS)-->
-        <i class="fa-solid fa-bars" id="botaoHamburguer"></i>
+        <i class="fa-solid fa-bars" id="botao-hamburguer"></i>
         <nav>
 
-            <ul class="menuLinks">
+            <ul class="menu-links">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#reserva">RESERVA</a></li>
                 <li><a href="#vantagens-para-empresas">VANTAGENS PARA EMPRESAS</a></li>
@@ -45,9 +45,12 @@
             </ul>
 
         </nav>
-        <div class="login">
+        <div class="div-login">
+            <form id="login" class="login" action="ambiente-interno.html" method="post">
             <input type="text" id="usuario" name="usuario" placeholder="Insira usuário" title="Insira usuário" required>
             <input type="password" id="senha" name="senha" placeholder="Senha" title="Insira senha" required>
+            <button type="submit" class="botao-login" name="login">Login</button>
+        </form>
         </div>
     </header>
 
@@ -72,12 +75,12 @@
             </div>
         </section>
 
-        <section class="cointanerReserva">
+        <section class="cointaner-reserva">
             <h1 id="reserva">RESERVA</h1>
             <!--MENU DATA LOCACAO-->
-            <form class="formularioReserva">
+            <form class="formulario-reserva">
                 <div>
-                    <select class="selecaoLocal">
+                    <select class="selecao-local">
                         <option>--Retire em--</option>
                         <option>No Aeroporto</option>
                         <option>Na Rodoviária</option>
@@ -85,7 +88,7 @@
                         <option>Na Minha Residência</option>
                         <option>Outros</option>
                     </select>
-                    <select class="selecaoCarro">
+                    <select class="selecao-carro">
                         <option>--Escolha o modelo--</option>
                         <option>Compactos</option>
                         <option>Hatch 1.0</option>
@@ -96,13 +99,13 @@
                 </div>
                 <label>CHECK-IN</label>
                 <div>
-                    <input type="date" class="dateTime" required>
-                    <input type="time" class="dateTime" required>
+                    <input type="date" class="date-time" required>
+                    <input type="time" class="date-time" required>
                 </div>
                 <label>CHECK-OUT</label>
                 <div>
-                    <input type="date" class="dateTime" required>
-                    <input type="time" class="dateTime" required>
+                    <input type="date" class="date-time" required>
+                    <input type="time" class="date-time" required>
                 </div>
 
                 <button type="submit" name="reservar">Reservar</button>
@@ -112,39 +115,39 @@
 
         <!--PARA EMPRESAS (VANTAGENS CARDS)-->
         <h1 id="vantagens-para-empresas">VANTAGENS PARA EMPRESAS</h1>
-        <section class="containerCardVantagens">
+        <section class="container-card-vantagens">
             
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-solid fa-car-burst"></i>
                 <h2>Assistência 24 horas</h2>
             </div>
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-solid fa-money-bills"></i>
                 <h2>Preços competitivos</h2>
             </div>
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-solid fa-dollar-sign"></i>
                 <h2>Faturamento direto <br>pela empresa</h2>
             </div>
             
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-regular fa-calendar-days"></i>
                 <h2>Prazos de <br>locação flexíveis</h2>
             </div>
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-solid fa-car-on"></i>
                 <h2>Renovação Periódica<br> de frota</h2>
             </div>
-            <div class="cardVantagens">
+            <div class="card-vantagens">
                 <i class="fa-regular fa-user"></i>
                 <h2>Atendimento personalizado</h2>
                 
             </div>
         </section>
         <h1 id="requisitos-para-locacao">REQUISITOS PARA LOCAÇÃO</h1>
-        <section class="containerCardRequisitos">
-            <div class="cardRequisitos">
-                <div class="organizacaoCardRequisitos">
+        <section class="container-card-requisitos">
+            <div class="card-requisitos">
+                <div class="organizacao-card-requisitos">
                     <i class="fa-solid fa-user-check"></i>
                     <h3>Idade e tempo <br>de carteira</h3>
                 </div>
@@ -155,8 +158,8 @@
                     nossa equipe.</p>
 
             </div>
-            <div class="cardRequisitos">
-                <div class="organizacaoCardRequisitos">
+            <div class="card-requisitos">
+                <div class="organizacao-card-requisitos">
                     <i class="fa-regular fa-id-card"></i>
                     <h3>Documentos<br> originais</h3>
                 </div>
@@ -164,8 +167,8 @@
                     ideal ter em mãos.Em alguns casos é solicitado apresentar comprovante de residência atualizado.</p>
 
             </div>
-            <div class="cardRequisitos">
-                <div class="organizacaoCardRequisitos">
+            <div class="card-requisitos">
+                <div class="organizacao-card-requisitos">
                     <i class="fa-regular fa-credit-card"></i>
                     <h3>Cartão de crédito</h3>
                 </div>
@@ -176,8 +179,8 @@
                     Algumas locadoras aceitam cartões emitidos por lojas ou financeiras, consulte exceções.</p>
 
             </div>
-            <div class="cardRequisitos">
-                <div class="organizacaoCardRequisitos">
+            <div class="card-requisitos">
+                <div class="organizacao-card-requisitos">
                     <i class="fa-solid fa-circle-check"></i>
                     <h3>CPF sem restrição</h3>
                 </div>
@@ -187,8 +190,8 @@
                     liberam a locação. Fale com nossa equipe e saiba quais.</p>
 
             </div>
-            <div class="cardRequisitos">
-                <div class="organizacaoCardRequisitos">
+            <div class="card-requisitos">
+                <div class="organizacao-card-requisitos">
                     <i class="fa-solid fa-plane-arrival"></i>
                     <h3>Clientes<br> Estrangeiros</h3>
                 </div>
@@ -202,20 +205,20 @@
         <section>
             <div>
                 <h1 id="promocoes">PROMOÇÕES</h1>
-                <div class="containerPromocoes">
-                    <section class="bannerPromocoes cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="1000"
-                        data-cycle-prev="#prevPromocoes" data-cycle-next="#nextPromocoes">
+                <div class="container-promocoes">
+                    <section class="banner-promocoes cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="1000"
+                        data-cycle-prev="#prev-promocoes" data-cycle-next="#next-promocoes">
 
-                        <img src="src/imagens/10Off.png" alt="imagem 10%Off" class="bannerPromocoes">
+                        <img src="src/imagens/10Off.png" alt="imagem 10%Off" class="banner-promocoes">
                         <img src="src/imagens/pacoteFds.png" alt="imagem Pacote final de semana"
-                            class="bannerPromocoes">
-                        <img src="src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="bannerPromocoes">
-                        <img src="src/imagens/cartaVerde.png" alt="imagem carta verde" class="bannerPromocoes">
+                            class="banner-promocoes">
+                        <img src="src/imagens/indicacao.png" alt="imagem Desconto Indicação" class="banner-promocoes">
+                        <img src="src/imagens/cartaVerde.png" alt="imagem carta verde" class="banner-promocoes">
                     </section>
                 </div>
-                <div class="controlesPromocoes">
-                    <i class="fa-solid fa-circle-arrow-left" id="prevPromocoes" title="Promoção anterior"></i>
-                    <i class="fa-solid fa-circle-arrow-right" id="nextPromocoes" title="Próxima promoção"></i>
+                <div class="controles-promocoes">
+                    <i class="fa-solid fa-circle-arrow-left" id="prev-promocoes" title="Promoção anterior"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="next-promocoes" title="Próxima promoção"></i>
                 </div>
 
             </div>
@@ -223,7 +226,7 @@
         <div>
             <!--LOCALIZAÇÃO-->
             <h1 id="localizacao">LOCALIZAÇÃO</h1>
-            <div class="containerLocalizacao">
+            <div class="container-localizacao">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9878161916317!2d-51.17003992512873!3d-30.008506229609598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776fbe97593f%3A0x1af65845dc42b5ff!2sR.%20Apar%C3%ADcio%20Mariense%2C%20211%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091030-370!5e0!3m2!1spt-BR!2sbr!4v1713312952161!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -235,7 +238,7 @@
             <h1 id="fale-conosco">FALE CONOSCO</h1>
             <!--FALE CONOSCO (FORMULARIO)-->
             <div>
-                <form class="formularioFaleConosco">
+                <form class="formulario-fale-conosco">
                     <input type="email" name="email" size="40" placeholder="Digite seu e-mail" required>
                     <input type="tel" name="telefone" size="25" placeholder="Digite seu telefone" required>
                     <textarea cols="25" rows="10" placeholder="Digite aqui sua mensagem" name="mensagem"
@@ -248,11 +251,11 @@
 
     <footer>
 
-        <div class="containerImagensFooter">
-            <img src="src/imagens/abla.png" alt="imagem Associação" class="imagemFooter">
-            <img src="src/imagens/sindloc.png" alt="imagem Sindicato" class="imagemFooter">
-            <img src="src/imagens/bandeirasCartoes.png" alt="cartões aceitos" class="imagemFooter">
-            <div class="divRedesSociais">
+        <div class="container-imagens-footer">
+            <img src="src/imagens/abla.png" alt="imagem Associação" class="imagem-footer">
+            <img src="src/imagens/sindloc.png" alt="imagem Sindicato" class="imagem-footer">
+            <img src="src/imagens/bandeirasCartoes.png" alt="cartões aceitos" class="imagem-footer">
+            <div class="div-redes-sociais">
                 <a href="https://wa.me/555195182231" target="_blank">
 
                     <i class="fa-brands fa-whatsapp" title="WhatsApp"></i>
@@ -279,7 +282,7 @@
     </script> -->
 
     <script>
-        $("#botaoHamburguer").click(function () {
+        $("#botao-hamburguer").click(function () {
             $("nav").toggle(800)
         });
     </script>

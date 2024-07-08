@@ -1,4 +1,4 @@
-.formularioFaleConosco{
+.formulario-fale-conosco{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,13 +11,13 @@
     gap: 10px;
     border-radius: 7px;
 }
-.formularioFaleConosco input{
+.formulario-fale-conosco input{
     width: 90%;   
     height: 30px;
     border-radius: 5px;
     
 }
-.formularioFaleConosco textarea{
+.formulario-fale-conosco textarea{
     width: 90%;   
     border-radius: 5px;
     

@@ -9,14 +9,28 @@ header {
   width: 10vw;
   border-radius: 0.2rem;
 }
-.login{
+.div-login{
   display: flex;
   gap: 3px;  
  }
 #usuario, #senha{
-  width: 10vw;
+  width: 7vw;
+  font-size: 10px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+}
+.botao-login{
+  font-family: var(--fonte-padrao);
+  background-color: var(--primary-color);
+  width: 7vw;
+  border-radius: 5px;
+  font-size: 10px;
+}
+#div-login{
+  width: 7vw;
+  font-size: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -25,7 +39,7 @@ li {
   margin-left: 20px;
 }
 a {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-decoration: none;
   font-weight: bold;
   color: var(--primary-color);
@@ -38,11 +52,11 @@ a:hover {
   color: var(--primary-color);
   transition: 0.5s;
 }
-.menuLinks {
+.menu-links {
   display: flex;
   list-style: none;
 }
-#botaoHamburguer {
+#botao-hamburguer {
   color: var(--primary-color);
   font-size: 1.8em;
   margin: auto;
@@ -66,13 +80,13 @@ a:hover {
 
 /*TAMANHO MINIMO 776PX */
 @media (min-width: 776px) {
-  #botaoHamburguer {
+  #botao-hamburguer {
     display: none;
   }
 }
 /* TAMANHO MAXIMO 775 PX*/
 @media (max-width: 775px) {
-  .menuLinks {
+  .menu-links {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -90,7 +104,7 @@ a:hover {
   ul li a:hover {
     font-size: 2.2rem;
   }
-  .containerLogo {
+  .container-logo {
     display: flex;
     justify-content: center;
   }
@@ -121,7 +135,7 @@ a:hover {
         height: 30px;
     }
 
-    .menuLinks {
+    .menu-links {
         display: none;
     }    
 }

@@ -1,4 +1,4 @@
-.containerCardVantagens{
+.container-card-vantagens{
     margin: auto;
     padding: 1em;
     display: flex; 
@@ -11,7 +11,7 @@
 .divOrganizacaoCards{
     display: flex;
 }
-.cardVantagens{
+.card-vantagens{
     width: 14%;
     font-size: 0.8em;
     color: var(--primary-color);
@@ -44,25 +44,25 @@
 }
 /*TAMANHO MAXIMO 1090PX */
 @media (max-width:1090px) {
-    .cardVantagens{
+    .card-vantagens{
         width: 30%;
     }    
 }
 /* TAMANHO MAXIMO 755PX*/
 @media (max-width:755px) {
-    .cardVantagens {
+    .card-vantagens {
         width: 22%;
     }    
 }
 /*TAMANHO MAXIMO 600PX*/
 @media (max-width:600px) {
-    .cardVantagens{
+    .card-vantagens{
         width: 40%;
     }    
 }
 /*TAMANHO MAXIMO 320PX*/
 @media (max-width:320px) {
-    .cardVantagens{
+    .card-vantagens{
         width: 100%;
     }    
 }

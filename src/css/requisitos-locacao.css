@@ -1,4 +1,4 @@
-.containerCardRequisitos{
+.container-card-requisitos{
     width: 95%;
     margin: auto;
     padding: 1em;
@@ -8,7 +8,7 @@
     text-align: center;
     color: var(--primary-color);
 }
-.cardRequisitos{
+.card-requisitos{
     width:98%;
     height: 98%;
     margin: 0.1em;
@@ -22,12 +22,11 @@
     text-align: left;
     padding: 10px;
 }
-.cardRequisitos h3{
+.card-requisitos h3{
     width:200px;
     margin-left: 10px;
-
 }
-.organizacaoCardRequisitos{
+.organizacao-card-requisitos{
     display: flex;
     align-items: center;
     width:250px ;
@@ -55,23 +54,23 @@
     .texto-escondido{
         display: none;
     }
-    .containerCardRequisitos {
+    .container-card-requisitos {
         display: grid;
         align-content: center;
     }
-    .cardRequisitos{
+    .card-requisitos{
         flex-direction: column;
         align-items: center;
         cursor: pointer;
     }
-    .cardRequisitos p {
+    .card-requisitos p {
         width: 80%;
         margin-bottom: 1rem;
     }
 }
 /*TAMANHO MAX 320PX*/
 @media (max-width:320px) {
-    .containerCardRequisitos {
+    .container-card-requisitos {
         display: grid;
         align-content: center;
     }

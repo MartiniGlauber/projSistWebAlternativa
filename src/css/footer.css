@@ -17,12 +17,12 @@ footer{
     font-size: 50px;
     transition: 1s;
 }
-.containerImagensFooter{
+.container-imagens-footer{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.imagemFooter{
+.imagem-footer{
     width: 20vw;    
     margin-right: 5%; 
     justify-content: space-around;
@@ -37,7 +37,7 @@ footer{
     margin-left: 3%;
     margin-top: 0.8em;
 }
-.divRedesSociais{
+.div-redes-sociais{
     display: flex;
 }
 .fa-whatsapp{

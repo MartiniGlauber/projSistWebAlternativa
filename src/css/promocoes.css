@@ -1,12 +1,12 @@
-.containerPromocoes{
+.container-promocoes{
     display: flex;
     justify-content: center;
 }
-.bannerPromocoes{
+.banner-promocoes{
     width: 25rem;
     border-radius: 1rem;
 }
-.controlesPromocoes{
+.controles-promocoes{
     height: 6vh;
     color: var(--primary-color);
     margin-top: 0.5em;
@@ -14,24 +14,24 @@
     display: flex;
     justify-content:center;
 }
-.controlesPromocoes :first-child{
+.controles-promocoes :first-child{
     margin-right: 0.5em;
 }
 
-#prevPromocoes{
+#prev-promocoes{
     font-size: 2.6rem;
     transition: 0.8s;
     cursor: pointer;
 }
-#prevPromocoes:hover{
+#prev-promocoes:hover{
     font-size: 2.8rem;
     transition: 0.8s;
 }
-#nextPromocoes{
+#next-promocoes{
     font-size: 2.6rem;
     transition: 0.8s;
 }
-#nextPromocoes:hover{
+#next-promocoes:hover{
     font-size: 2.8rem;
     transition: 0.8s;
 }
