@@ -14,7 +14,7 @@ CREATE TABLE endereco (
     pais VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Cliente (
+CREATE TABLE cliente (
     cliente_id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     cpf_cnpj VARCHAR (100) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Cliente (
     FOREIGN KEY (endereco_id) REFERENCES endereco(endereco_id)
 );
 
-CREATE TABLE Veiculo (
+CREATE TABLE veiculo (
     veiculo_id INT AUTO_INCREMENT PRIMARY KEY,
     marca VARCHAR(50) NOT NULL,
     modelo VARCHAR(50) NOT NULL,
@@ -53,4 +53,19 @@ CREATE TABLE pagamento (
     valor_pago DECIMAL(10, 2) NOT NULL,
     metodo_pagamento VARCHAR(50) NOT NULL,
     FOREIGN KEY (locacao_id) REFERENCES locacao(locacao_id)
+);
+
+CREATE TABLE perfis_acesso (
+    perfil_id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_perfil VARCHAR(50) NOT NULL,
+    descricao VARCHAR(255)
+);
+
+CREATE TABLE usuarios (
+    usuario_id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    perfil_id INT,
+    FOREIGN KEY (perfil_id) REFERENCES perfis_acesso(perfil_id)
 );
