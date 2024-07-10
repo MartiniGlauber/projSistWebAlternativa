@@ -7,6 +7,7 @@
 @import url(promocoes.css);
 @import url(localizacao.css);
 @import url(formularioFaleConosco.css);
+@import url(style-ambiente-interno.css);
 
 :root{
     --primary-color: #846130;

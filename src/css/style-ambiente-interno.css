@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    display: flex;
+    padding: 20px;
+}
+span{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.menu-lateral {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+.conteudo-principal {
+    flex: 3;
+    padding-left: 20px;
+}
+footer {
+    background-color:var(--third-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;    
+}

@@ -4,16 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Web Alternativa Autolocadora</title>
+    <link href="src/css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Painel administrativo</h1>
+        <div>
+            <span>Alternativa Autolocadora</span>
+        </div>
+        <div>
+            <span>Bem-vindo, Usuário</span> <!-- Aqui deve ser dinâmico com o nome do usuário logado -->
+        </div>
     </header>
     <main>
-        <div class="painelBotoes">
-
+        <div class="menu-lateral">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" onclick="abrirTela('cadastroUsuario')">Cadastro de Usuário</a></li>
+                <li><a href="#" onclick="abrirTela('listagemUsuario')">Listagem de Usuário</a></li>
+                <li><a href="#" onclick="abrirTela('cadastroVeiculo')">Cadastro de Veículo</a></li>
+                <li><a href="#" onclick="abrirTela('listagemVeiculo')">Listagem de Veículo</a></li>
+                <li><a href="#" onclick="abrirTela('cadastroCliente')">Cadastro de Cliente</a></li>
+                <li><a href="#" onclick="abrirTela('listagemCliente')">Listagem de Cliente</a></li>
+                <li><a href="#" onclick="abrirTela('cadastroLocacao')">Cadastro de Locação</a></li>
+                <li><a href="#" onclick="abrirTela('listagemLocacao')">Listagem de Locação</a></li>
+                <li><a href="#" onclick="abrirTela('cadastroPagamento')">Cadastro de Pagamento</a></li>
+                <li><a href="#" onclick="abrirTela('listagemPagamento')">Listagem de Pagamento</a></li>
+            </ul>
+        </div>
+        <div class="conteudo-principal">
+            <div id="telaSecundaria">
+                <!-- Aqui serão abertas as telas secundárias -->
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="container-imagens-footer">
+            <img src="src/imagens/abla.png" alt="imagem Associação" class="imagem-footer">
+            <img src="src/imagens/sindloc.png" alt="imagem Sindicato" class="imagem-footer">
+            <img src="src/imagens/bandeirasCartoes.png" alt="cartões aceitos" class="imagem-footer">
+            <div class="div-redes-sociais">
+                <a href="https://wa.me/555195182231" target="_blank">
+
+                    <i class="fa-brands fa-whatsapp" title="WhatsApp"></i>
+                </a>
+                <a href="https://www.instagram.com/alternativaautolocadora" target="_blank">
+                    <i class="fa-brands fa-instagram" title="Instagram"></i></a>
+            </div>
+            
+        </div>
+
+        <p class="copyright">Desenvolvido por Glauber Martini. Todos os direitos reservados</p>
+        <a href="#"><i class="fa-solid fa-circle-arrow-up" id="voltar-topo" title="Voltar ao topo"></i></a>
+
+    </footer>
     
 </body>
 </html>
