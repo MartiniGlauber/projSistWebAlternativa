@@ -8,7 +8,7 @@
     text-align: center;
     color: var(--primary-color);
 }
-.divOrganizacaoCards{
+.div-organizacao-cards{
     display: flex;
 }
 .card-vantagens{
@@ -16,7 +16,8 @@
     font-size: 0.8em;
     color: var(--primary-color);
     text-align: center;
-    padding: 1em;    
+    padding: 1em;   
+    border: 1px solid var(--primary-color); 
 }
 .fa-car-burst{
     font-size: 3.5em;

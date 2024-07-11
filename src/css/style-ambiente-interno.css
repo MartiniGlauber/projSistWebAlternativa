@@ -1,16 +1,16 @@
-body {
+.body-ambiente-interno {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-header {
+.header-ambiente-interno {
     color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main {
+.main-ambiente-interno {
     display: flex;
     padding: 20px;
 }
@@ -19,23 +19,71 @@ span{
     color: var(--primary-color);
 }
 .menu-lateral {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    padding-right: 20px;
-    border-right: 1px solid #ccc;
+    width: 18vw; /* Largura do menu lateral */    
+    margin: auto; /* Centraliza o menu lateral na página, se desejado */    
+}
+
+.menu {
+    background-color: var(--third-color); /* Cor de fundo para o cabeçalho do menu */
+    padding: 10px;
+    text-align: center; /* Centraliza o texto dentro do cabeçalho do menu */
+}
+
+.menu h2 {
+    margin: 0;
+}
+
+.botoes-menu {
+    background-color: #ffffff 05; /* Cor de fundo para os botões do menu */
+}
+
+.botoes-menu .ul-botoes-menu {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centraliza os itens da lista */
+}
+
+.botoes-menu .ul-botoes-menu .li-botoes-menu {
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior para cada item */
+    display: inline-block; /* Exibe os itens da lista como blocos inline */
+    margin: 5px 0; /* Espaçamento vertical entre os botões */
+    width: 100%; /* Faz os itens ocuparem toda a largura do contêiner */
+}
+
+.botoes-menu .ul-botoes-menu .li-botoes-menu .a-botoes-menu {
+    display: block; /* Faz com que o link ocupe toda a largura do item da lista */
+    padding: 10px;
+    text-decoration: none; /* Remove a sublinha dos links */
+    color: var(--primary-color); /* Cor do texto */
+    font-size: 12px;
+    text-align: center; /* Centraliza o texto dentro do botão */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor dos botões */
+    border-radius: 4px; /* Adiciona cantos arredondados aos botões */
+}    
+
+
+.botoes-menu .ul-botoes-menu .li-botoes-menu .a-botoes-menu:hover {
+    background-color: #f4f4f4; /* Cor de fundo ao passar o mouse */
 }
 .conteudo-principal {
     flex: 3;
     padding-left: 20px;
 }
-footer {
-    background-color:var(--third-color);
+.footer-ambiente-interno {
+    background-color: var(--third-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;    
+    padding: 5px; /* Reduz o padding para diminuir a altura do footer */
+    position: relative;
+    bottom: 0;
+    height: auto; 
+    box-sizing: border-box; /* Garante que o padding esteja incluído na altura total */
+}
+
+.footer-ambiente-interno p {
+    margin: 0; /* Remove a margem padrão dos parágrafos */
+    line-height: 30px; /* Ajusta a altura da linha do texto */
 }
