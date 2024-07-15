@@ -10,14 +10,15 @@
 }
 .div-organizacao-cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .card-vantagens{
     width: 14%;
     font-size: 0.8em;
     color: var(--primary-color);
     text-align: center;
-    padding: 1em;   
-    border: 1px solid var(--primary-color); 
+    padding: 1em;
 }
 .fa-car-burst{
     font-size: 3.5em;
@@ -51,7 +52,7 @@
 }
 /* TAMANHO MAXIMO 755PX*/
 @media (max-width:755px) {
-    .card-vantagens {
+    .card-vantagens{
         width: 22%;
     }    
 }

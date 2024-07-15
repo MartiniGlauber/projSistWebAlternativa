@@ -67,11 +67,17 @@
         width: 80%;
         margin-bottom: 1rem;
     }
+    .card-requisitos h3{
+        font-size: 18px;
+    }
 }
 /*TAMANHO MAX 320PX*/
 @media (max-width:320px) {
     .container-card-requisitos {
         display: grid;
         align-content: center;
+    }
+    .card-requisitos h3{
+        font-size: 10px;
     }
 }

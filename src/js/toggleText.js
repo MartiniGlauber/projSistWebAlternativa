@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".cardRequisitos");
+const cards = document.querySelectorAll(".card-requisitos");
 
 cards.forEach((card) => {
   card.onclick = () => {

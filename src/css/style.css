@@ -1,12 +1,12 @@
 @import url(header.css);
-@import url(paraEmpresas.css);
+@import url(para-empresas.css);
 @import url(banner.css);
 @import url(reserva.css);
-@import url(requisitosLocacao.css);
+@import url(requisitos-locacao.css);
 @import url(footer.css);
 @import url(promocoes.css);
 @import url(localizacao.css);
-@import url(formularioFaleConosco.css);
+@import url(formulario-fale-conosco.css);
 @import url(style-ambiente-interno.css);
 
 :root{
